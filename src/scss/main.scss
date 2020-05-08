@@ -4,3 +4,73 @@
 @import '_mixins.scss';
 @import '_vars.scss';
 @import '_media.scss';
+@import './components/main-page.scss';
+@import './components/menu.scss';
+@import './components/logo.scss';
+
+body {
+  letter-spacing: 0.01em;
+}
+
+.container {
+  width: 1131px;
+  max-width: 1131px;
+  margin: 0 auto;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: $primary-c;
+  cursor: pointer;
+
+  &:hover {
+    stroke: $attantion-c;
+  }
+
+  &__facebook {
+    padding-bottom: 20px;
+  }
+}
+
+.networks {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  right: -4px;
+}
+
+.btn {
+  &__link {
+    font-family: $fn-sub, serif;
+    font-size: $fs-small;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $button-c;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    border: 2px solid $button-c;
+    padding: 15px 53px 13px 22px;
+    transform: translateX(2px);
+    position: relative;
+    display: inline-block;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 16%;
+      width: 11px;
+      height: 2px;
+      background: $button-c;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      transform: rotate(90deg);
+      top: 47%;
+    }
+  }
+}

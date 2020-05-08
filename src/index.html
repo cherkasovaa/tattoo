@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
   <head>
     <meta charset="UTF-8" />
 
@@ -26,25 +26,25 @@
   <body>
     <header class="main-page">
       <div class="container">
-        <div class="toggle-menu"><span class="toggle-menu__item"></span></div>
+        <!-- <div class="toggle-menu"><span class="toggle-menu__item"></span></div> -->
         <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__items">Home</li>
-            <li class="menu__items">New! Tattoo supplies</li>
-            <li class="menu__items">Artists</li>
-            <li class="menu__items">About us</li>
-            <li class="menu__items">Services</li>
-            <li class="menu__items">360 tour</li>
-            <li class="menu__items">Featured work</li>
-            <li class="menu__items">Aftercare</li>
-            <li class="menu__items">FAQ</li>
-            <li class="menu__items">Contact</li>
+            <li class="menu__items"><a href="#" class="menu__link">Home</a></li>
+            <li class="menu__items"><a href="#" class="menu__link">New! Tattoo supplies</a></li>
+            <li class="menu__items"><a href="#" class="menu__link">Artists</a></li>
+            <li class="menu__items"><a href="#" class="menu__link">About us</a></li>
+            <li class="menu__items"><a href="#" class="menu__link">Services</a></li>
+            <li class="menu__items"><a href="#" class="menu__link">360 tour</a></li>
+            <li class="menu__items"><a href="#" class="menu__link">Featured work</a></li>
+            <li class="menu__items"><a href="#" class="menu__link">Aftercare</a></li>
+            <li class="menu__items"><a href="#" class="menu__link">FAQ</a></li>
+            <li class="menu__items"><a href="#" class="menu__link">Contact</a></li>
           </ul>
         </nav>
         <div class="main-page__content">
-          <a href="#" class="logo"
+          <div class="logo"
             ><img src="./images/logo.png" alt="logo" class="logo__image"
-          /></a>
+          /></div>
           <div class="main-page__logo">
             <img
               src="./images/tattoos_logo.png"
@@ -56,12 +56,14 @@
           <div class="btn">
             <a href="#" class="btn__link">contact us</a>
           </div>
-          <svg class="icon icon__facebook">
-            <use xlink:href="images/sprite.svg#facebook"></use>
-          </svg>
-          <svg class="icon icon__instagram">
-            <use xlink:href="images/sprite.svg#instagram"></use>
-          </svg>
+          <div class="networks">
+            <svg class="icon icon__facebook">
+              <use xlink:href="images/sprite.svg#facebook"></use>
+            </svg>
+            <svg class="icon icon__instagram">
+              <use xlink:href="images/sprite.svg#instagram"></use>
+            </svg>
+          </div>
         </div>
       </div>
     </header>
