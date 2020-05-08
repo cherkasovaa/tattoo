@@ -1,7 +1,7 @@
 @import '../_vars.scss';
 
 .main-page {
-  background: $secondary-c url('../../images/main_bg.jpg') no-repeat center center / cover;
+  background: $secondary-c url('../images/main_bg.jpg') no-repeat center center / cover;
   position: relative;
   padding-top: 37px;
 
@@ -27,7 +27,7 @@
     z-index: 1;
   }
 
-  & > .container {
+  & > .custom-container {
     position: relative;
     z-index: 3;
   }

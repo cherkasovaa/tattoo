@@ -7,12 +7,15 @@
 @import './components/main-page.scss';
 @import './components/menu.scss';
 @import './components/logo.scss';
+@import './components/artists.scss';
 
-body {
-  letter-spacing: 0.01em;
-}
+// * {
+//   box-sizing: border-box;
+//   padding: 0;
+//   margin: 0;
+// }
 
-.container {
+.custom-container {
   width: 1131px;
   max-width: 1131px;
   margin: 0 auto;
@@ -31,6 +34,13 @@ body {
   &__facebook {
     padding-bottom: 20px;
   }
+
+  &__add-icon {
+    width: 12px;
+    height: 16px;
+    fill: $attantion-c;
+    stroke: $attantion-c;
+  }
 }
 
 .networks {
@@ -41,7 +51,7 @@ body {
   right: -4px;
 }
 
-.btn {
+.button {
   &__link {
     font-family: $fn-sub, serif;
     font-size: $fs-small;
@@ -55,6 +65,11 @@ body {
     transform: translateX(2px);
     position: relative;
     display: inline-block;
+
+    &:hover {
+      text-decoration: none;
+      color: $button-c;
+    }
 
     &::before,
     &::after {
@@ -73,4 +88,13 @@ body {
       top: 47%;
     }
   }
+}
+
+.title {
+  font-family: $fn-main;
+  font-size: $fs-extralarge;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $highlight-c;
+  letter-spacing: 0.02em;
 }
