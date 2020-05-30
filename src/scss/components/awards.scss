@@ -1,0 +1,65 @@
+@import '../_vars.scss';
+
+.awards {
+  background: $highlight-c url('./../images/bg_2.jpg') no-repeat top left / cover;
+  padding: 151px 0 149px;
+
+  &__cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    display: flex;
+    width: 263px;
+    color: $secondary-c;
+
+    &:nth-child(1) {
+      width: 308px;
+    }
+
+    &:nth-child(3) {
+      width: 317px;
+    }
+
+    &-image-container {
+      width: 80px;
+      height: 80px;
+      overflow: hidden;
+      margin-right: 15px;
+    }
+
+    &-image {
+      width: 100%;
+      height: auto;
+    }
+
+    &-title {
+      font-family: $fn-main;
+      font-weight: 900;
+      font-size: $fs-large;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      padding-bottom: 8px;
+      padding-top: 7px;
+    }
+
+    &-description {
+      font-family: $fn-sub;
+      font-size: $fs-smaller;
+      line-height: 18px;
+      padding-bottom: 4px;
+    }
+
+    &-link-learn-more {
+      color: $attantion-c;
+      text-decoration: none;
+      line-height: 10px;
+      position: relative;
+
+      &:hover {
+        color: darken($color: $attantion-c, $amount: 20)
+      }
+    }
+  }
+}
