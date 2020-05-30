@@ -24,6 +24,7 @@
     font-size: $fs-smaller;
     letter-spacing: 0.01em;
     text-decoration: none;
+    transition: $duration;
 
     &:hover {
       text-decoration: none;

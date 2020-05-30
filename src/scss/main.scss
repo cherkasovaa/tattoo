@@ -8,12 +8,7 @@
 @import './components/menu.scss';
 @import './components/logo.scss';
 @import './components/artists.scss';
-
-// * {
-//   box-sizing: border-box;
-//   padding: 0;
-//   margin: 0;
-// }
+@import './components/awards.scss';
 
 .custom-container {
   width: 1131px;
@@ -26,6 +21,7 @@
   height: 24px;
   stroke: $primary-c;
   cursor: pointer;
+  transition: $duration;
 
   &:hover {
     stroke: $attantion-c;
@@ -65,10 +61,17 @@
     transform: translateX(2px);
     position: relative;
     display: inline-block;
+    transition: $duration;
 
     &:hover {
       text-decoration: none;
-      color: $button-c;
+      border: 2px solid $attantion-c;
+      color: $attantion-c;
+
+      &::before,
+      &::after {
+        background: $attantion-c;
+      }
     }
 
     &::before,
@@ -81,6 +84,7 @@
       height: 2px;
       background: $button-c;
       transform: translateY(-50%);
+      transition: $duration;
     }
 
     &::after {
@@ -97,4 +101,5 @@
   text-transform: uppercase;
   color: $highlight-c;
   letter-spacing: 0.02em;
+  margin-bottom: 24px;
 }
