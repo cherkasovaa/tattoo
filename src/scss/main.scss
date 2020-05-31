@@ -34,6 +34,27 @@
 
   &__facebook {
     padding-bottom: 20px;
+
+    &--highlight {
+      display: inline-block;
+      stroke: $attantion-c;
+      margin-right: 26px;
+
+      &:hover {
+        stroke: darken($color: $attantion-c, $amount: 10);
+      }
+    }
+  }
+
+  &__instagram{
+    &--highlight {
+      display: inline-block;
+      stroke: $attantion-c;
+
+      &:hover {
+        stroke: darken($color: $attantion-c, $amount: 10);
+      }
+    }
   }
 
   &__add-icon {
