@@ -19,7 +19,7 @@
     <meta property="og:description" content="Look at our works" />
     <meta name="twitter:title" content="Tattoo website" />
 
-    <title>Tattoo</title>
+    <title>Dream Masters Tattoos</title>
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -205,6 +205,74 @@
             </div>
             <div class="about__studio-photo-wrap">
               <img src="./images/about_us_photo.jpg" alt="photo of studio" class="about__studio-photo">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="collective-work">
+        <div class="custom-container">
+          <h2 class="title title__collective-work">instagram collective work</h2>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="custom-container">
+          <form action="#" method="post" enctype="multipart/form-data" class="form-contacts">
+            <capture class="form-contacts__title">contact form</capture>
+            <label for="mail" class="form-contacts__field">e-mail *</label>
+            <input type="email" class="form-contacts__placeholder" name="address" id="mail" placeholder="Enter your name" required>
+
+            <label for="artist-select" class="form-contacts__field">pick your artist</label>
+
+            <select name="artists" id="artist-select" class="form-contacts__placeholder form-contacts__placeholder--select">
+              <option value="svetlyo" class="form-contacts__select-option">Svetlyo</option>
+              <option value="renette" class="form-contacts__select-option">Renette</option>
+              <option value="dave" class="form-contacts__select-option">Dave</option>
+              <option value="kayla" class="form-contacts__select-option">Kayla</option>
+            </select>
+
+            <label for="message-text" class="form-contacts__field">message *</label>
+            <textarea name="message" id="message-text" cols="30" rows="5" placeholder="Tell us about your idea" class="form-contacts__placeholder" placeholder="Tell us about your idea" required></textarea>
+
+            <div class="form-contacts__upload-photos">
+              <input type="file" accept="image/*" name="image-upload" id="first-image">
+              <input type="file" accept="image/*" name="image-upload" id="second-image">
+              <input type="file" accept="image/*" name="image-upload" id="third-image">
+            </div>
+            <button type="submit" class="form-contacts__submit">Contact us</button>
+          </form>
+
+          <div class="address">
+            <div class="address__info">
+              <div class="address__block-wrapper">
+                <h5 class="address__header">Opening hours:</h5>
+                <p class="address__content">Mon-Fri: 12am-8pm</p>
+                <p class="address__content">Sunday: 12pm-8pm</p>
+              </div>
+              <div class="address__block-wrapper">
+                <h5 class="address__header">Adress:</h5>
+                <p class="address__content">228 Columbus Ave, San Francisco California, 94133</p>
+              </div>
+              <div class="address__block-wrapper">
+                <h5 class="address__header">E-mail:</h5>
+                <a href="mailto:info@dream-masters.com" class="address__content">info@dream-masters.com</a>
+              </div>
+              <div class="address__block-wrapper">
+                <h5 class="address__header">phone:</h5>
+                <a href="tel:+14152777204" class="address__content">(415) 277-7204</a>
+              </div>
+              <div class="address__block-wrapper">
+                <div class="networks">
+                  <svg class="icon icon__facebook">
+                    <use xlink:href="images/sprite.svg#fb"></use>
+                  </svg>
+                  <svg class="icon icon__instagram">
+                    <use xlink:href="images/sprite.svg#instagram"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="address__map-wrapper">
+              <img src="./images/map.jpg" alt="location on the map" class="address__map">
             </div>
           </div>
         </div>

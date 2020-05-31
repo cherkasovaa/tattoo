@@ -1,11 +1,12 @@
 // Colors inside
 $gray: #f6f6f6;
 $white: #fff;
-$red: #ff0e0e;
+$red: #ff0000;
 $dark_gray: #1d1c21;
 $light_gray: #89898b;
 $tuna: #36353d;
 $iron: #d8d8d9;
+$silver: #cecece;
 
 // Colors outside
 $primary-c: $gray;
@@ -14,6 +15,7 @@ $attantion-c: $red;
 $highlight-c: $light_gray;
 $light-c: $white;
 $button-c: $iron;
+$placeholder-c: $tuna;
 
 // Fonts
 $fn-main: "Playfair Display SC";
