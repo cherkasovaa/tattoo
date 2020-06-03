@@ -234,9 +234,32 @@
             <textarea name="message" id="message-text" cols="30" rows="5" placeholder="Tell us about your idea" class="form-contacts__placeholder" placeholder="Tell us about your idea" required></textarea>
 
             <div class="form-contacts__upload-photos">
-              <input type="file" accept="image/*" name="image-upload" id="first-image">
-              <input type="file" accept="image/*" name="image-upload" id="second-image">
-              <input type="file" accept="image/*" name="image-upload" id="third-image">
+              <div class="form-contacts__custom-upload-file">
+                <svg class="icon icon__upload">
+                  <use xlink:href="images/sprite.svg#upload-icon"></use>
+                </svg>
+                <label for="first-image" class="form-contacts__label">
+                  <input type="file" accept="image/*" name="image-upload" id="first-image" class="form-contacts__upload-file">upload image
+                </label>
+              </div>
+
+              <div class="form-contacts__custom-upload-file">
+                <svg class="icon icon__upload">
+                  <use xlink:href="images/sprite.svg#upload-icon"></use>
+                </svg>
+                <label for="second-image" class="form-contacts__label">
+                  <input type="file" accept="image/*" name="image-upload" id="second-image" class="form-contacts__upload-file">upload image
+                </label>
+              </div>
+
+              <div class="form-contacts__custom-upload-file">
+                <svg class="icon icon__upload">
+                  <use xlink:href="images/sprite.svg#upload-icon"></use>
+                </svg>
+                <label for="third-image" class="form-contacts__label">
+                  <input type="file" accept="image/*" name="image-upload" id="third-image" class="form-contacts__upload-file">upload image
+                </label>
+              </div>
             </div>
             <button type="submit" class="form-contacts__submit">Contact us</button>
           </form>
@@ -276,5 +299,45 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="custom-container">
+        <div class="footer__menu">
+          <ul class="footer__list">
+            <li class="footer__items"><a href="#" class="footer__link">Home</a></li>
+            <li class="footer__items"><a href="#" class="footer__link">New! Tattoo supplies</a></li>
+            <li class="footer__items"><a href="#" class="footer__link">Artists</a></li>
+            <li class="footer__items"><a href="#" class="footer__link">About us</a></li>
+            <li class="footer__items"><a href="#" class="footer__link">Services</a></li>
+            <li class="footer__items"><a href="#" class="footer__link">360 tour</a></li>
+            <li class="footer__items"><a href="#" class="footer__link">Featured work</a></li>
+            <li class="footer__items"><a href="#" class="footer__link">Aftercare</a></li>
+            <li class="footer__items"><a href="#" class="footer__link">FAQ</a></li>
+            <li class="footer__items"><a href="#" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__copyright-info">© Dream Masters Custom Tattoos Sweden, est. 2006</p>
+          <ul class="footer__company-contacts">
+            <li class="footer__item">
+              <p class="footer__address">228 Columbus Ave, San Francisco, CA 94133</p>
+            </li>
+            <li class="footer__item">
+              <a href="tel:+14152777204" class="footer__phone">(415) 277-7204</a>
+            </li>
+            <li class="footer__item">
+              <a href="mailto:info@dream-masters.com" class="footer__email">info@dream-masters.com</a>
+            </li>
+          </ul>
+          <div class="networks networks__footer">
+            <svg class="icon icon__facebook--footer icon__facebook--highlight">
+              <use xlink:href="images/sprite.svg#fb"></use>
+            </svg>
+            <svg class="icon icon__instagram--footer icon__instagram--highlight">
+              <use xlink:href="images/sprite.svg#instagram"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

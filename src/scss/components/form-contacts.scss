@@ -35,6 +35,10 @@
     margin-bottom: 27px;
     padding-left: 15px;
     color: $primary-c;
+
+    &--select {
+      color: $highlight-c;
+    }
   }
 
   &__select-option {
@@ -48,7 +52,7 @@
 
   &__upload-photos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 40px;
   }
 
@@ -101,5 +105,24 @@
       transform: rotate(90deg);
       top: 47%;
     }
+  }
+
+  &__custom-upload-file {
+    display: flex;
+    justify-content: space-around;
+    width: 105px;
+    position: relative;
+
+    & .form-contacts__label {
+      cursor: pointer;
+      font-family: $fn-sub;
+      font-size: $fs-smaller;
+      color: $primary-c;
+      letter-spacing: 0.01em;
+    }
+  }
+
+  &__upload-file {
+    display: none;
   }
 }
