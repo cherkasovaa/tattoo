@@ -169,3 +169,51 @@
   background-color: $secondary-c;
   padding: 20px 0 80px;
 }
+
+.grid {
+  float: left;
+
+  &-right {
+    float: right;
+    margin-right: 0px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  &__item {
+    float: left;
+    width: 202px;
+    height: 222px;
+    margin: 0 0px 15px 23px;
+    overflow: hidden;
+
+    &--no-margin {
+      margin-left: 0;
+    }
+  }
+
+  &__item--width2 {
+    width: 455px;
+    height: 455px;
+    margin: 0 0px 15px 0px;
+
+    &-no-margin {
+      margin-right: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
