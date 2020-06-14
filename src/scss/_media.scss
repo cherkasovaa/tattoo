@@ -1,1 +1,134 @@
 @import 'vars';
+@import './components/main-page.scss';
+@import './components/menu.scss';
+@import './components/logo.scss';
+@import './components/artists.scss';
+@import './components/awards.scss';
+@import './components/about.scss';
+@import './components/featured-work.scss';
+@import './components/collective-work.scss';
+@import './components/form-contacts.scss';
+@import './components/address.scss';
+@import './components/footer.scss';
+
+@media screen and (max-width: $extra-large-bp) {
+  .custom-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .artists {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+  }
+  .main-page {
+    &__image {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $large-bp) {
+  body {
+    overflow: hidden;
+  }
+
+  .custom-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .toggle-menu {
+    display: block;
+  }
+
+  .icon__menu {
+    stroke: $primary-c;
+  }
+
+  .menu {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 90vh;
+      width: 100%;
+      padding-top: 15px;
+      transform: translateX(-200%);
+      background-color: $secondary-c;
+      transition: transform 0.3s ease-in;
+    }
+
+    &__toggle{
+      z-index: 10;
+      transform: translateX(-27%);
+    }
+
+    &__items {
+      opacity: 0;
+    }
+  }
+
+  .networks {
+    flex-direction: row;
+    top: -29px;
+    right: 0;
+  }
+
+  .icon {
+    &__facebook {
+      margin-right: 30px;
+    }
+  }
+
+  .main-page {
+    height: 100vh;
+
+    &__logo {
+      width: 100%;
+    }
+
+    .main-page__content {
+      padding-top: 10%;
+    }
+  }
+}
+
+@media screen and (max-width: $small-bp) {
+  .custom-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: auto;
+  }
+
+  .main-page {
+    .main-page__content {
+      padding-top: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: $extra-small-bp) {
+  .custom-container {
+    width: 90%;
+  }
+}
+
+@keyframes navLinksFade {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
