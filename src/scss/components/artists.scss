@@ -1,7 +1,7 @@
 @import '../_vars.scss';
 
 .artists {
-  padding: 99px 0;
+  padding: 80px 0;
   background-color: $secondary-c;
 
   &__wrapper {
@@ -11,6 +11,7 @@
   }
 
   &-card {
+    padding-bottom: 19px;
 
     &__info {
       display: flex;

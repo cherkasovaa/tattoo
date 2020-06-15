@@ -2,7 +2,7 @@
 
 .awards {
   background: $highlight-c url('./../images/bg_2.jpg') no-repeat top left / cover;
-  padding: 151px 0 149px;
+  padding: 151px 0 130px;
 
   &__cards-wrapper {
     display: flex;
@@ -12,6 +12,7 @@
   &__card {
     display: flex;
     width: 263px;
+    margin-bottom: 19px;
     color: $secondary-c;
 
     &:nth-child(1) {
