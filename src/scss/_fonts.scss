@@ -4,6 +4,17 @@
 }
 
 @font-face {
+  font-family: 'playfair_display';
+  src: url('../fonts/playfairdisplaysc-black.eot');
+  src: url('../fonts/playfairdisplaysc-black.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/playfairdisplaysc-black.woff2') format('woff2'),
+       url('../fonts/playfairdisplaysc-black.woff') format('woff'),
+       url("../fonts/playfairdisplaysc-black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "SourceSansPro";
   src: url("../fonts/sourcesanspro.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro.woff") format("woff"), url("../fonts/sourcesanspro.ttf") format("truetype");
 }
